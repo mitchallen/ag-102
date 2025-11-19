@@ -8,3 +8,9 @@ run-yo:
 
 clean:
 	find . -type d -name "__pycache__" -exec rm -rf {} +
+
+test-hello:
+	uv run pytest packages/hello-world/tests
+
+test-yo:
+	uv run pytest packages/yo/tests

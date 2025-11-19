@@ -1,0 +1,19 @@
+version = 1
+revision = 3
+requires-python = ">=3.8"
+
+[manifest]
+members = [
+    "ag-102-monorepo",
+    "hello-world",
+]
+
+[[package]]
+name = "ag-102-monorepo"
+version = "0.1.0"
+source = { virtual = "." }
+
+[[package]]
+name = "hello-world"
+version = "0.1.0"
+source = { editable = "packages/hello-world" }
